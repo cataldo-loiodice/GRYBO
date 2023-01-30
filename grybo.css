@@ -1,0 +1,106 @@
+body {
+    width: 250px;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    position: relative;
+    top: 5px;
+
+}
+
+.table {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto 0px;
+    background-color: green;
+}
+
+div > div {
+    float:left;
+}
+
+input {
+    position: absolute;
+    top: -999px;
+    left: -999px;
+}
+
+div > label {
+    width: 50px;
+    height: 50px;
+	display: block;
+	background: transparent;
+    box-sizing: border-box;
+    border: 1px solid black;
+	border-radius: 2px;
+	color: white;
+	font-weight: bold;
+    position: absolute;
+}
+
+.to-be-changed {
+    width: 50px;
+    height: 50px;
+    background-color: #cecece;
+    
+}
+
+div > input:checked ~ .to-be-changed {
+	background-color: transparent;
+}
+
+body > label {
+    box-sizing: border-box;
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: black;
+    border: 1px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+}
+
+#green {   
+    background-color: green;   
+}
+
+#toggle_green:checked ~ .table {
+	background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#toggle_red:checked ~ .table {
+	background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#toggle_yellow:checked ~ .table {
+	background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#toggle_blue:checked ~ .table {
+	background-color: blue;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#toggle_orange:checked ~ .table {
+	background-color: orange;
+}
